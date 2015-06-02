@@ -1,0 +1,299 @@
+/*estilos de las cajas de busqueda*/
+#display /*estilos para la caja principal en donde se puestran los resultados de la busqueda en forma de lista*/
+{
+width:400px;
+display:none;
+overflow:hidden;
+z-index:10;
+border: solid 1px #666;
+}
+.display_box /*estilos para cada caja unitaria de cada usuario que se muestra*/
+{
+padding:2px;
+padding-left:6px;
+font-size:18px;
+height:63px;
+text-decoration:none;
+color:#3b5999;
+}
+
+.display_box:hover /*estilos para cada caja unitaria de cada usuario que se muestra. cuando el mause se pocisiona sobre el area*/
+{
+background: #7f93bc;
+color: #FFF;
+}
+.desc
+{
+color:#666;
+font-size:16;
+}
+.desc:hover
+{
+color:#FFF;
+}
+/*declaramos los estilos de como se van a mostrar los detalles de empresas*/
+.detalles_cont{
+	width:96%;
+	background: #eee;
+	webkit-border-radius: 6px;
+	moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.detalles_cont legend{
+	margin-left:0.5em;
+	width:90%;
+}
+.detalles_cont span{
+	color:green;
+}
+/*estilos para listar empresas*/
+.list_emp{
+	border-bottom: 1px solid #ececec;
+	margin-left:-0.5em;
+}
+/*elementos de menu secundario*/
+#acordeon {
+    /*colocación y forma del menú*/
+	background: #96A5A4;
+	margin: 0px auto 0 auto;
+	color:#1D1C1C;
+	/*ejecto de sombra alrededor*/
+	box-shadow:
+		0 5px 15px 1px rgba(0, 0, 0, 0.6),
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+
+#acordeon ul{
+    /*eliminando padding lateral*/
+    padding:0px;
+    /*y espaciado entre apartados*/
+    margin:0px;
+}
+/*estilos de menu principal*/
+#acordeon h3, .submenu{
+	font-size: 12px;
+	line-height: 34px;
+	padding: 0 10px;
+    /* hago que los elementos del menú salgan pegados*/
+    margin:0px;
+	cursor: pointer;
+    /*este fondo es para cuando no hay gradiente*/
+    background: linear-gradient(#E7E6E6, #C7CAC7);
+
+}
+.submenu a{
+    color: #1D1C1C;
+    text-decoration: none;
+    display: block;
+}
+/*efecto luminoso en el texto de los cabeceros*/
+#acordeon h3:hover, .submenu a:hover {
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	color: white;
+	border-left: 5px solid #B6BAB6;
+	transition: all 0.55s;
+}
+/*spam para los iconos*/
+#acordeon h3 span, #acordeon .submenu span a{
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*quitamos puntos a las listas*/
+#acordeon li {
+	list-style-type: none;
+}
+/*aspecto de los enlaces*/
+#acordeon ul ul li a {
+	color: #1D1C1C;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 27px;
+	display: block;
+	padding: 0 15px;
+	/*hacemos que la transción sea suave*/
+	transition: all 0.15s;
+}
+/*animación sobre los enlaces*/
+#acordeon ul ul li a:hover {
+	background: #E0E9E9;
+	border-left: 5px solid lightgreen;
+    transition: all 0.55s;
+}
+/*Lets hide the non active LIs by default*/
+#acordeon ul ul {
+	display: none;
+}
+#acordeon li.active ul {
+	display: block;
+}
+/*
+/*fin del menu secundario*/
+
+.columnas {
+	overflow: hidden;
+}
+.colIzquierda {
+	float: left;
+	text-align: justify;
+}
+
+.contenidos_articulos {
+	width: 750px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.colIzquierda h2 {
+	color: black;
+	font: 1.5em "soberana_titularbold", serif!important;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.contenidos_articulos .articulos {
+	background: url("../img/separador_section.png") 50% 100% no-repeat;
+	margin-top: 37px;
+	min-height: 156px;
+	padding: 6px 0 52px 276px;
+	position: relative;
+}
+.contenidos_articulos .articulos p {
+	margin-top: 0.5em;
+	font: 18px "soberana_sansregular";
+}
+.contenidos_articulos .articulos .articulo-titulo {
+	font: 18px/22px "soberana_sansregular", serif;
+}
+.contenidos_articulos .articulos .imagen {
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 0;
+	height: 160px;
+	width: 250px;
+	overflow: hidden;
+}
+
+.etiqueta {
+	font: 10px "soberana_sansbold";
+	height: 38px;
+	left: -1px;
+	line-height: 30px;
+	position: absolute;
+	text-align: left;
+	text-transform: uppercase;
+	top: 12px;
+	width: 50px;
+	z-index: 3;
+}
+
+.colDerecha {
+	float: right;
+	width: 300px;
+	border-left: 1px solid #e0e0e0;
+}
+
+.MODULOS {
+	margin-top: 30px;
+	float: left;
+	width: 285px;
+}
+
+.MODULOS .modulos-modulo {
+	margin: 0 0 20px 0;
+}
+
+.MODULOS .modulos {
+	position: relative;
+	z-index: 0;
+}
+/*scroll*/
+.nav_up{
+	padding:7px;
+	background-color:#fafafa;
+	border:1px solid #CCC;
+	position:fixed;
+	background:transparent url(../img/arrow_up.png) no-repeat top left;
+	background-position:50% 50%;
+	width:20px;
+	height:20px;
+	bottom:10px;
+	opacity:1;
+	/*left:15px;*/
+	right: 15px;
+	white-space:nowrap;
+	cursor: pointer;
+	-moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius:3px;
+	-webkit-border-radius-radius:3px;
+    -khtml-border-radius-radius:3px;
+	-khtml-border-radius-radius:3px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+.titulo_pagina{
+	margin-left:1.5em;
+	text-transform: uppercase;
+	font: 1em "soberana_titularbold", serif!important;
+}
+
+form p {
+  float: left;
+  clear: both;
+  background-color: #f4f4f4;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin-left: 2.5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 3px #aaa;
+  -webkit-box-shadow: 0px 0px 3px #aaa;
+  box-shadow: 0px 0px 3px #aaa;
+}
+/*
+ * jQuery File Upload UI Plugin CSS 8.1
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+
+  cursor: pointer;
+}
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .fileupload-buttonbar .toggle,
+  .files .toggle,
+  .files .btn span {
+    display: none;
+  }
+  .files .name {
+    width: 80px;
+    word-wrap: break-word;
+  }
+}

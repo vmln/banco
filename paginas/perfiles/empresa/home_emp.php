@@ -1,0 +1,1 @@
+esta es la seccion principal del perfil de la empresa

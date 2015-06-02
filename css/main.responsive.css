@@ -1,0 +1,75 @@
+/* Large desktop */
+@media (min-width: 1200px) {
+.nav-pills li form{
+ 	margin-top:-6px;
+ }
+}
+@media (max-width: 1199px) {
+.colDerecha {
+	float: left;
+}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.contenidos_articulos .articulos {
+	width: 250px;
+	padding: 3px 0 20px 276px;
+	}
+.colDerecha {
+	float: left;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.contenidos_articulos .articulos {
+	width: 300px;
+	padding: 3px 0 20px 126px;
+	}
+.contenidos_articulos .articulos .imagen {
+	height: 110px;
+	width: 100px;
+	margin-top: 20px;
+}
+.contenidos_articulos .articulos p {
+	width: 320px;
+}
+.colDerecha {
+	float: left;
+}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.contenidos_articulos .articulos{
+	width: 200px;
+	padding: 120px 20px 0px 1px;
+}
+.contenidos_articulos {
+	width: 100%;
+}
+.contenidos_articulos .articulos p {
+	width: 240px;
+}
+.contenidos_articulos .articulos .imagen {
+	height: 100px;
+	width: 180px;
+	margin-top: 15px;
+}
+.contenidos_articulos .articulos .articulo-titulo {
+	font-size: 14px;
+	width: 300px;
+	position:absolute;
+    top:-2em;
+    left:0;
+}
+.colDerecha {
+	float: left;
+	width: 280px;
+}
+.MODULOS {
+	width: 200px;
+	padding-left: 6px;
+}
+
+}
